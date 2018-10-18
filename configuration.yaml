@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Configuration
+metadata:
+  name: knative-routing-demo
+  namespace: default
+spec:
+  revisionTemplate:
+    spec:
+      container:
+        image: docker.io/brianmmcclain/knative-routing-demo:latest
+        imagePullPolicy: Always
+        env:
+        - name: VERSION
+          value: "1"
