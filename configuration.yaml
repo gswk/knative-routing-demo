@@ -7,7 +7,7 @@ spec:
   revisionTemplate:
     spec:
       container:
-        image: docker.io/brianmmcclain/knative-routing-demo:latest
+        image: docker.io/gswk/knative-routing-demo:latest
         imagePullPolicy: Always
         env:
         - name: VERSION
